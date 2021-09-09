@@ -1,0 +1,22 @@
+@import './media-queries.scss';
+@import './colors.scss';
+
+.buttonContact {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+  background-color: $primary-color;
+  fill: #ffff;
+  border: thick double #32a1ce;
+  font-size: 15px;
+  color: $forth-color;
+  border-radius: 14px 14px 14px 14px;
+  box-shadow: 0px 0px 12px 0px rgb(52 189 202 / 100%);
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $second-color;
+    color: $forth-color;
+  }
+}
