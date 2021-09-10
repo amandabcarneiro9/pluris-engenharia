@@ -1,39 +1,23 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Header from './Header'
+import Header from './header/Header'
 import styles from './layout.module.scss'
-import Image from 'next/image'
-import utilStyles from '../styles/util.module.scss'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+// import { far } from '@fortawesome/free-regular-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, fas)
 
 const name = 'home foto'
-export default function Layout({ home, children, siteTitle }) {
+export default function Layout({ home, children }) {
   return (
     <div className={styles.container}>
       <Head>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <title>Pluris Engenharia</title>
         <meta name="Pluris engenharia" content=" Pluris serviços de Engenharia" />
-
-        <title>{siteTitle}</title>
       </Head>
       <Header />
-      {home ? (
-        <>
-          <div>
-            <Image priority src="/images/home.jpg" height={650} width={1300} alt={name} />
-          </div>{' '}
-          <div className={styles.texts}>
-            <h1 className={styles.tituloHome}>Qualidade e Confiança em Primeiro Lugar</h1>
-            <p className={styles.paragrafoHome}>
-              Na Pluris Engenharia você encontra profissionais especializados que analisam as melhores condições para
-              realizar os sonhos dos seus clientes.{' '}
-            </p>
-
-            <button className={utilStyles.buttonSaibaMais}> Clique para saber mais</button>
-          </div>
-        </>
-      ) : (
-        ''
-      )}
+      {children}
     </div>
   )
 }

@@ -1,7 +1,6 @@
-import Head from 'next/head'
 import Layout from '../components/layout'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Inicio from '../components/Home/Home'
+import QuemSomos from '../components/QuemSomos/QuemSomos'
 
 const name = 'home foto'
 const siteTitle = 'Início'
@@ -9,9 +8,12 @@ const siteTitle = 'Início'
 export default function Home() {
   return (
     <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
+      <>
+        <Inicio />
+        <section>
+          <QuemSomos />
+        </section>
+      </>
     </Layout>
   )
 }

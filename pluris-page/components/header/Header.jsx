@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import styles from './header.module.scss'
-import utilStyles from '../styles/util.module.scss'
+import utilStyles from '../../styles/util.module.scss'
 import Hamburger from 'hamburger-react'
 import Image from 'next/image'
 
