@@ -5,22 +5,27 @@
   max-width: 1600px;
   margin: 0 auto;
 
-  .tituloHome {
-    font-size: 40px;
-    color: $forth-color;
+  .texts {
     position: absolute;
     top: 40%;
-    left: 20%;
-    text-align: center;
-  }
+    left: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  .paragrafoHome {
-    font-size: 22px;
-    color: $forth-color;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    text-align: center;
-    padding: 18px 118px;
+    .tituloHome {
+      font-size: 40px;
+      color: $primary-color;
+      text-align: center;
+    }
+
+    .paragrafoHome {
+      margin-top: 0;
+      font-size: 22px;
+      color: $forth-color;
+      text-align: center;
+      padding: 18px 118px;
+    }
   }
 }

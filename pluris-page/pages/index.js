@@ -12,7 +12,6 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Image priority src="/images/home.jpg" height={80} width={80} alt={name} />
     </Layout>
   )
 }
