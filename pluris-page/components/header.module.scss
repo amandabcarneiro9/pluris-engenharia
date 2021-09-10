@@ -2,8 +2,10 @@
 @import '../styles/media-queries.scss';
 
 .header {
-  background-color: $forth-color;
+  background-color: transparent;
   font-size: 20px;
+  position: fixed;
+  z-index: 3;
 
   .link {
     color: $primary-color;
@@ -19,6 +21,7 @@
   @include for-desktop-and-large {
     display: flex;
     height: 100px;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
 
