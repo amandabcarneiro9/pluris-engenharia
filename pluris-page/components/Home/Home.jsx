@@ -6,10 +6,7 @@ const name = 'mão masculina passando cimento no tijolo'
 
 export default function Home() {
   return (
-    <div>
-      <div>
-        <Image priority src="/images/home.jpg" height={650} width={1300} alt={name} />
-      </div>
+    <>
       <div className={styles.texts}>
         <h1 className={styles.tituloHome}>Qualidade e Confiança em Primeiro Lugar</h1>
         <p className={styles.paragrafoHome}>
@@ -17,8 +14,8 @@ export default function Home() {
           realizar os sonhos dos seus clientes.{' '}
         </p>
 
-        <button className={utilStyles.buttonSaibaMais}> Clique para saber mais</button>
+        <button className={utilStyles.buttonWhite}> Clique para saber mais</button>
       </div>
-    </div>
+    </>
   )
 }

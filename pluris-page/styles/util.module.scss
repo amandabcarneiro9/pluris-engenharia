@@ -1,7 +1,7 @@
 @import './media-queries.scss';
 @import './colors.scss';
 
-.buttonContact {
+.buttonBlue {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@
   }
 }
 
-.buttonSaibaMais {
+.buttonWhite {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -37,4 +37,10 @@
     background-color: $primary-color;
     color: $forth-color;
   }
+}
+
+.titleBlue {
+  color: $primary-color;
+  font-size: 38px;
+  text-transform: uppercase;
 }

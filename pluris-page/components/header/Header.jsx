@@ -33,7 +33,7 @@ export default function Header() {
           <a className={styles.link}>Galeria de Projetos</a>
         </Link>
         <Link href="/">
-          <button className={utilStyles.buttonContact}>Entre em contato</button>
+          <button className={utilStyles.buttonBlue}>Entre em contato</button>
         </Link>
       </div>
     </header>
