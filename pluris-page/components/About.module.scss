@@ -9,6 +9,9 @@
   background-color: black;
 
   .values {
+    @include for-phone {
+      display: none;
+    }
     display: flex;
     margin-top: 100px;
 
