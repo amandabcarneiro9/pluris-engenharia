@@ -36,7 +36,7 @@ export default function About() {
       </div>
 
       <div className={Style.quemSomos}>
-        <h2 className={utilStyles.titleBlue}>Quem somos</h2>
+        <h2 className={utilStyles.titleBlack}>Quem somos</h2>
         <p className={Style.content}>
           A Pluris Engenharia é um empresa formada por profissionais qualificados e comprometidos em entregar sempre o
           melhor aos seus clientes. Atuando há 3 anos no mercado, a Pluris Engenharia mantém como objetivo realizar os
