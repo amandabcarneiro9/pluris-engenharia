@@ -43,4 +43,14 @@
   color: $primary-color;
   font-size: 38px;
   text-transform: uppercase;
+  display: inline-block;
+  align-self: center;
+}
+
+.titleBlack {
+  color: $second-color;
+  font-size: 38px;
+  text-transform: uppercase;
+  display: inline-block;
+  align-self: center;
 }
