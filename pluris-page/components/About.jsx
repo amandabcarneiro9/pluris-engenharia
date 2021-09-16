@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Style from './About.module.scss'
 import Util from '../styles/util.module.scss'
+import Link from 'next/link'
 
 export default function About() {
   return (
@@ -51,7 +52,14 @@ export default function About() {
             melhor aos seus clientes. Atuando há 3 anos no mercado, a Pluris Engenharia mantém como objetivo realizar os
             sonhos dos seus clientes seguindo os valores e princípios da empresa.{' '}
           </p>{' '}
-          <button className={Util.buttonBlue}>Venha nos conhecer melhor</button>
+          <Link
+            href={{
+              pathname: '/quem-somosPage',
+              query: { name: 'quem somos' },
+            }}
+          >
+            <button className={Util.buttonBlue}>Venha nos conhecer melhor</button>
+          </Link>
         </div>
       </div>
       <div className={Util.blackSpace}>
