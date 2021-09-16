@@ -2,7 +2,7 @@
 @import '../styles/media-queries.scss';
 
 .header {
-  background-color: transparent;
+  background-color: rgba(35, 35, 35, 0.7);
   font-size: 20px;
   position: fixed;
   z-index: 3;
@@ -11,7 +11,7 @@
     color: $forth-color;
 
     &:hover {
-      color: $second-color;
+      color: $primary-color;
     }
   }
   .navLinks {
@@ -38,6 +38,8 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+    width: 100%;
+    margin-right: 40px;
   }
 }
 
@@ -50,6 +52,7 @@
   background: transparent;
   z-index: 1000;
   left: 0;
+  background-color: $forth-color;
 
   .navLinks {
     position: absolute;
@@ -60,6 +63,10 @@
     align-items: center;
     justify-content: space-around;
     height: 70vh;
+
+    .link {
+      color: $second-color;
+    }
   }
 
   .image {
