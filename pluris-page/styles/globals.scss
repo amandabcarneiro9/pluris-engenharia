@@ -25,3 +25,19 @@ a {
     display: none;
   }
 }
+
+@font-face {
+  font-family: 'Noto Sans', sans-serif;
+  src: url('/fonts/Noto_Sans/NotoSans-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans', sans-serif;
+  src: url('/fonts/Noto_Sans/NotoSans-Bold.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}

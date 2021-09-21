@@ -1,7 +1,7 @@
 import Style from './About.module.scss'
 import Util from '../styles/util.module.scss'
 import Link from 'next/link'
-import Values from './values'
+import Values from './Values'
 
 export default function About() {
   return (
