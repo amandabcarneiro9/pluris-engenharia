@@ -7,30 +7,6 @@
   justify-content: center;
   align-items: center;
   background-color: black;
-  .values {
-    @include for-phone {
-      display: none;
-    }
-    display: flex;
-    margin-top: 100px;
-
-    .value {
-      text-align: center;
-      color: $third-color;
-      padding: 10px 10px;
-      font-size: 18px;
-
-      .icon {
-        font-size: 80px;
-        color: $primary-color;
-        margin-bottom: 10px;
-      }
-
-      .valueSpan {
-        padding: 10px;
-      }
-    }
-  }
 
   .quemSomos {
     text-align: center;

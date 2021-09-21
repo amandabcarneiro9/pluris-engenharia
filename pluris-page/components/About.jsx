@@ -1,50 +1,13 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Style from './About.module.scss'
 import Util from '../styles/util.module.scss'
 import Link from 'next/link'
+import Values from './values'
 
 export default function About() {
   return (
     <>
       <div className={Style.container}>
-        <div className={Style.values}>
-          <div className={Style.value}>
-            <div className={Style.icon}>
-              <FontAwesomeIcon icon={['fas', 'award']} />
-            </div>
-            <span className={Style.valueSpan}>
-              Qualidade em todos os processos. Desde o projeto até o seu desenvolvimento.{' '}
-            </span>
-          </div>
-
-          <div className={Style.value}>
-            <div className={Style.icon}>
-              <FontAwesomeIcon icon={['fas', 'leaf']} />
-            </div>
-            <span className={Style.valueSpan}>
-              Comprometimento com o meio ambiente através de projetos de menor impacto.{' '}
-            </span>
-          </div>
-
-          <div className={Style.value}>
-            <div className={Style.icon}>
-              <FontAwesomeIcon icon={['fas', 'handshake']} />
-            </div>
-            <span className={Style.valueSpan}>
-              Comunicação eficiente entre a empresa e os clientes para os alinhamentos dos projetos.{' '}
-            </span>
-          </div>
-
-          <div className={Style.value}>
-            <div className={Style.icon}>
-              <FontAwesomeIcon icon={['fas', 'hard-hat']} />
-            </div>
-            <span className={Style.valueSpan}>
-              Profissionais qualificados e preparados com as melhores técnicas do mercado.{' '}
-            </span>
-          </div>
-        </div>
-
+        <Values />
         <div className={Style.quemSomos}>
           <h2 className={Util.titleBlue}>Quem somos</h2>
           <p className={Style.content}>

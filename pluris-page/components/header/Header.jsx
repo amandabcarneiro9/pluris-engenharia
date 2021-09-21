@@ -23,7 +23,7 @@ export default function Header() {
         <Link href="/">
           <a className={styles.link}>Início</a>
         </Link>
-        <Link href="/">
+        <Link href="/quem-somosPage">
           <a className={styles.link}>Quem Somos</a>
         </Link>
         <Link href="/">

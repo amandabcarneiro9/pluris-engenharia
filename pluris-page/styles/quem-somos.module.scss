@@ -5,15 +5,39 @@
   background-color: $forth-color;
   .apresentation {
     position: relative;
+    animation: show 750ms ease-out;
 
     .firstText {
       position: absolute;
-      top: 30%;
+      top: 40%;
       left: 0;
       color: white;
       font-size: 26px;
       text-align: center;
-      padding: 10px 56px;
+      padding: 10px 100px;
+      animation: fadeIn 750ms ease-out;
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
