@@ -14,6 +14,7 @@
   border-radius: 14px 14px 14px 14px;
   box-shadow: 0px 0px 12px 0px rgb(52 189 202 / 100%);
   text-transform: uppercase;
+  font-weight: 400;
 
   &:hover {
     background-color: $forth-color;
@@ -49,6 +50,7 @@
   display: inline-block;
   align-self: center;
   margin-top: 50px;
+  font-weight: 600;
 }
 
 .titleBlack {
@@ -66,3 +68,23 @@
 .blackSpace {
   height: 100px;
 }
+
+.svgBlockBlack {
+  fill: black;
+}
+
+.svgBlockWhite {
+  fill: white;
+}
+
+.svgBlockGrey {
+  fill: $forth-color;
+}
+.svgBlockWhiteOposite {
+  fill: white;
+  float: right;
+}
+
+// .oposite {
+//   transform: rotateY(180deg);
+// }

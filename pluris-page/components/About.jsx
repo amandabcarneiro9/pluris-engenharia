@@ -21,7 +21,7 @@ export default function About() {
               query: { name: 'quem somos' },
             }}
           >
-            <button className={Util.buttonBlue}>Venha nos conhecer melhor</button>
+            <button className={Util.buttonBlue}>Mais sobre a empresa </button>
           </Link>
         </div>
       </div>

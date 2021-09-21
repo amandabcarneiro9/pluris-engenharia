@@ -2,8 +2,9 @@
 @import './media-queries.scss';
 
 .container {
-  background-color: $forth-color;
+  background-color: black;
   font-family: 'Noto Sans', sans-serif;
+
   .apresentation {
     position: relative;
     animation: show 750ms ease-out;
@@ -13,12 +14,59 @@
       top: 40%;
       left: 0;
       color: white;
-      font-size: 26px;
+      font-size: 22px;
       text-align: center;
       padding: 10px 100px;
       animation: fadeIn 750ms ease-out;
     }
   }
+
+  .historia {
+    background-color: black;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 100px;
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    .text {
+      width: calc(50% - 100px);
+      text-align: justify;
+      animation: fadeIn 750ms ease-out;
+    }
+  }
+
+  .block {
+    width: 100%;
+    background-color: white;
+
+    .blockContent {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 50px;
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+
+        .blockTexts {
+          font-weight: 500;
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  //   .div {
+  //     background-color: blue;
+  //   }
 }
 
 @keyframes fadeIn {

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Style from './values.module.scss'
 
-export default function Values() {
+export default function Values({ backgroundColor }) {
   return (
     <div className={Style.values}>
       <div className={Style.value}>
