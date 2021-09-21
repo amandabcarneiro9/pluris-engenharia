@@ -1,0 +1,19 @@
+@import './colors.scss';
+@import './media-queries.scss';
+
+.container {
+  background-color: $forth-color;
+  .apresentation {
+    position: relative;
+
+    .firstText {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      color: white;
+      font-size: 26px;
+      text-align: center;
+      padding: 10px 56px;
+    }
+  }
+}
