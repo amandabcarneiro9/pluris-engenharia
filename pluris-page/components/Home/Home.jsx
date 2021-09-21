@@ -14,7 +14,7 @@ export default function Home() {
           realizar os sonhos dos seus clientes.{' '}
         </p>
 
-        <button className={utilStyles.buttonWhite}> Clique para saber mais</button>
+        <button className={utilStyles.buttonWhite}> Conheça nossos serviços</button>
       </div>
     </>
   )

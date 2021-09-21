@@ -14,16 +14,21 @@
   background-size: cover;
 
   .tituloHome {
-    font-size: 40px;
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
     color: $primary-color;
     text-align: center;
+    font-size: 46px;
   }
 
   .paragrafoHome {
     margin-top: 0;
-    font-size: 22px;
+    font-size: 28px;
     color: $forth-color;
     text-align: center;
     padding: 18px 118px;
+    font-style: normal;
+    font-weight: 400;
   }
 }
