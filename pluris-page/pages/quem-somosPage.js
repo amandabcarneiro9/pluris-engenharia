@@ -18,7 +18,7 @@ export default function QuemSomos() {
             width={1600}
             alt="capacetes de obras enfileirados"
           />
-          <span className={Style.firstText}>bla bla nlas</span>
+          <span className={Style.firstText}>Valores</span>
         </div>
 
         <div className={Style.historia}>
@@ -56,11 +56,8 @@ export default function QuemSomos() {
             </div>
           </div>
         </div>
-        <div className={Style.div}>
-          <SvgBlock classNameColor={util.svgBlockWhite} opposite />
-
-          <Values />
-        </div>
+        <SvgBlock classNameColor={util.svgBlockWhite} opposite />
+        <Values />
       </div>
     </Layout>
   )
