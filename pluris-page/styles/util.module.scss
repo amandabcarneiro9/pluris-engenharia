@@ -64,27 +64,6 @@
     color: $forth-color;
   }
 }
-
-.blackSpace {
-  height: 100px;
-}
-
-.svgBlockBlack {
-  fill: black;
-}
-
 .svgBlockWhite {
   fill: white;
 }
-
-.svgBlockGrey {
-  fill: $forth-color;
-}
-.svgBlockWhiteOposite {
-  fill: white;
-  float: right;
-}
-
-// .oposite {
-//   transform: rotateY(180deg);
-// }
