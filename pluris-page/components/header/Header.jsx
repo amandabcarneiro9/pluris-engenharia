@@ -32,7 +32,7 @@ export default function Header() {
         <Link href="/">
           <a className={styles.link}>Galeria de Projetos</a>
         </Link>
-        <Link href="/">
+        <Link href="/contato">
           <button className={utilStyles.buttonBlue}>Entre em contato</button>
         </Link>
       </div>
