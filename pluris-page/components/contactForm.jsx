@@ -33,98 +33,112 @@ export default function ContactForm({ className, onSubmit }) {
   }
   return (
     <form action="" onSubmit={onFormSubmit} className={Style.form}>
-      <label htmlFor="name" className={Style.label}>
-        Name:*
-      </label>
-      <input
-        type="text"
-        name="name"
-        data-testid="inputName"
-        id="name"
-        value={name}
-        onChange={(e) => setName(e.currentTarget.value)}
-        placeholder="Seu nome aqui..."
-        required
-        className={Style.input}
-      />
-      <label htmlFor="phone" className={Style.label}>
-        Telefone:*
-      </label>
-      <input
-        type="text"
-        name="phone"
-        data-testid="inputPhone"
-        id="phone"
-        value={phone}
-        onChange={(e) => setPhone(e.currentTarget.value)}
-        placeholder="(xx)xxxxx-xxxx"
-        required
-        className={Style.input}
-      />
-      <label htmlFor="email" className={Style.label}>
-        Email:*
-      </label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        data-testid="inputEmail"
-        value={email}
-        onChange={(e) => setEmail(e.currentTarget.value)}
-        placeholder="Seu email aqui..."
-        required
-        className={Style.input}
-      />
-      <label htmlFor="address" className={Style.label}>
-        Endereço:*
-      </label>
-      <input
-        type="text"
-        name="address"
-        id="address"
-        data-testid="inputAddress"
-        value={address}
-        onChange={(e) => setAddress(e.currentTarget.value)}
-        placeholder="Seu endereço aqui..."
-        required
-        className={Style.input}
-      />
-      <span className={Style.options}>Selecione uma opção:*</span>
-      <div className={Style.checkbox}>
-        <RadioBox name="contactType" value="Residencial" selected={contactType} onChange={onContactTypeChange} />
-        <RadioBox name="contactType" value="Comercial" selected={contactType} onChange={onContactTypeChange} />
-        <RadioBox name="contactType" value="Corporativo" selected={contactType} onChange={onContactTypeChange} />
-        <RadioBox name="contactType" value="Paisagismo" selected={contactType} onChange={onContactTypeChange} />
+      <div className={Style.inputGrid1}>
+        <label htmlFor="name" className={Style.label}>
+          Name:*
+        </label>
+        <input
+          type="text"
+          name="name"
+          data-testid="inputName"
+          id="name"
+          value={name}
+          onChange={(e) => setName(e.currentTarget.value)}
+          placeholder="Seu nome aqui..."
+          required
+          className={Style.input}
+        />
       </div>
-      <label htmlFor="subject" className={Style.label}>
-        Assunto:*
-      </label>
-      <input
-        type="text"
-        name="subject"
-        id="subject"
-        // data-testid="inputSubject"
-        value={subject}
-        onChange={(e) => setSubject(e.currentTarget.value)}
-        placeholder="Escreva aqui título do email"
-        required
-        className={Style.input}
-      />
-      <label htmlFor="message" className={Style.label}>
-        Sua mensagem:
-      </label>
-      <textarea
-        name="message"
-        id="message"
-        // data-testid="inputMessage"
-        cols="30"
-        rows="10"
-        placeholder="Deixe sua mensagem..."
-        value={message}
-        onChange={(e) => setMessage(e.currentTarget.value)}
-        required
-        className={Style.textArea}
-      ></textarea>
+      <div className={Style.inputGrid2}>
+        <label htmlFor="phone" className={Style.label}>
+          Telefone:*
+        </label>
+        <input
+          type="text"
+          name="phone"
+          data-testid="inputPhone"
+          id="phone"
+          value={phone}
+          onChange={(e) => setPhone(e.currentTarget.value)}
+          placeholder="(xx)xxxxx-xxxx"
+          required
+          className={Style.input}
+        />
+      </div>
+      <div className={Style.inputGrid3}>
+        <label htmlFor="email" className={Style.label}>
+          Email:*
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          data-testid="inputEmail"
+          value={email}
+          onChange={(e) => setEmail(e.currentTarget.value)}
+          placeholder="Seu email aqui..."
+          required
+          className={Style.input}
+        />
+      </div>
+      <div className={Style.inputGrid4}>
+        <label htmlFor="address" className={Style.label}>
+          Endereço:*
+        </label>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          data-testid="inputAddress"
+          value={address}
+          onChange={(e) => setAddress(e.currentTarget.value)}
+          placeholder="Seu endereço aqui..."
+          required
+          className={Style.input}
+        />
+      </div>
+      <div className={Style.inputGrid5}>
+        <span className={Style.options}>Selecione uma opção:*</span>
+        <div className={Style.checkbox}>
+          <RadioBox name="contactType" value="Residencial" selected={contactType} onChange={onContactTypeChange} />
+          <RadioBox name="contactType" value="Comercial" selected={contactType} onChange={onContactTypeChange} />
+          <RadioBox name="contactType" value="Corporativo" selected={contactType} onChange={onContactTypeChange} />
+          <RadioBox name="contactType" value="Paisagismo" selected={contactType} onChange={onContactTypeChange} />
+        </div>
+      </div>
+      <div className={Style.inputGrid6}>
+        <label htmlFor="subject" className={Style.label}>
+          Assunto:*
+        </label>
+        <input
+          type="text"
+          name="subject"
+          id="subject"
+          // data-testid="inputSubject"
+          value={subject}
+          onChange={(e) => setSubject(e.currentTarget.value)}
+          placeholder="Escreva aqui título do email"
+          required
+          className={Style.input}
+        />
+      </div>
+      <div className={Style.textAreaGrid}>
+        <label htmlFor="message" className={Style.label}>
+          Sua mensagem:
+        </label>
+        <textarea
+          name="message"
+          id="message"
+          // data-testid="inputMessage"
+          cols="30"
+          rows="10"
+          placeholder="Deixe sua mensagem..."
+          value={message}
+          onChange={(e) => setMessage(e.currentTarget.value)}
+          required
+          className={Style.textArea}
+        ></textarea>
+      </div>
       <input type="submit" value="enviar" className={Util.submitInput} />
     </form>
   )
