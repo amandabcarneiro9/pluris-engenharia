@@ -2,10 +2,51 @@
 @import './colors.scss';
 
 .container {
-  background-color: $forth-color;
+  //   background-color: $forth-color;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
 
-  .informations {
+  .content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 2px 30px;
+
+    .informations {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: normal;
+
+      .firstMessage {
+        color: $third-color;
+      }
+
+      .secondMessage {
+        color: $primary-color;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .contactIcons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 200px;
+
+      .icon {
+        color: $primary-color;
+        font-size: 40px;
+      }
+      .info {
+        color: $third-color;
+        margin-left: 20px;
+      }
+    }
   }
 }

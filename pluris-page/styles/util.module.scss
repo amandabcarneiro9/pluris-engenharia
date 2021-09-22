@@ -67,3 +67,24 @@
 .svgBlockWhite {
   fill: white;
 }
+
+.submitInput {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  border-radius: 5px;
+  border: white;
+  text-transform: uppercase;
+  width: 30%;
+  height: 50px;
+  color: $forth-color;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+
+  &:hover {
+    background-color: white;
+    color: $primary-color;
+  }
+}

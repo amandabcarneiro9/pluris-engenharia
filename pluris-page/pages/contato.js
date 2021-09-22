@@ -1,51 +1,40 @@
 import Layout from '../components/layout'
-
+import ContactForm from '../components/contactForm'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Style from '../styles/contato.module.scss'
+import util from '../styles/util.module.scss'
 
 export default function Contato() {
   return (
     <Layout>
       <div className={Style.container}>
-        <div className={Style.informations}>
-          <span className={Style.firstMessage}>
-            Tem sugestões, duvidas ou gostaria de um orçamento ? Entre em contato através do formulário ao
-            lado.Ficaremos feliz em te ajudar !
-          </span>
-          <span className={Style.secondMessage}>Você também pode nos encontrar por aqui :</span>
-          <div className={Style.contactIcons}>
-            <FontAwesomeIcon icon={['fas', 'phone']} />
-            (xx)xxxx-xxxxx
-          </div>
-          <div>
-            <FontAwesomeIcon icon={['fas', 'envelope-square']} />
-            amandabcarneiro9@gmail.com
-          </div>
+        <h2 className={util.titleBlue}>Entre em contato </h2>
+        <div className={Style.content}>
+          <div className={Style.informations}>
+            <span className={Style.firstMessage}>
+              Tem sugestões, duvidas ou gostaria de um orçamento ? Entre em contato através do formulário ao lado.
+            </span>
+            <span>Ficaremos feliz em te ajudar !</span>
+            <span className={Style.secondMessage}>Você também pode nos encontrar por aqui :</span>
+            <div className={Style.contactIcons}>
+              <div className={Style.contacts}>
+                <FontAwesomeIcon icon={['fab', 'whatsapp']} className={Style.icon} />
+                <span className={Style.info}>(xx)xxxx-xxxxx</span>
+              </div>
+              <div className={Style.contacts}>
+                <FontAwesomeIcon icon={['fas', 'envelope-square']} className={Style.icon} />
+                <span className={Style.info}>amandabcarneiro9@gmail.com</span>
+              </div>
 
-          <div>
-            <FontAwesomeIcon icon={['fas', 'map-marker-alt']} />
-            Rua: exemplo exemplo exemplo,980 Bairro Cep Cidade
+              <div className={Style.contacts}>
+                <FontAwesomeIcon icon={['fas', 'map-marker-alt']} className={Style.icon} />
+                <span className={Style.info}>Rua: exemplo exemplo exemplo,980 Bairro Cidade</span>
+              </div>
+            </div>
           </div>
+          <ContactForm />
         </div>
       </div>
     </Layout>
-  )
-}
-
-function RadioBox({ name, value, selected, onChange }) {
-  return (
-    <>
-      <input
-        type="radio"
-        name={name}
-        id={value}
-        value={value}
-        onChange={onChange}
-        checked={selected === value}
-        data-testid={`radio${value}`}
-        required
-      />
-      <label htmlFor={value}>{value}</label>
-    </>
   )
 }
