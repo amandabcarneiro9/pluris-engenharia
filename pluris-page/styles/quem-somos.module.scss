@@ -23,7 +23,7 @@
 
   .historia {
     color: white;
-
+    background-color: black;
     justify-content: space-around;
 
     @include for-phone {
@@ -34,8 +34,6 @@
       padding: 20px;
     }
     @include for-desktop-and-large {
-      background-color: black;
-
       margin-bottom: 50px;
       margin-top: 50px;
       text-align: center;

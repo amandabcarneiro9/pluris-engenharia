@@ -19,6 +19,7 @@
     color: $primary-color;
     text-align: center;
     font-size: 46px;
+    animation: show 1s ease-out;
   }
 
   .paragrafoHome {
@@ -29,5 +30,28 @@
     padding: 18px 118px;
     font-style: normal;
     font-weight: 400;
+    animation: fadeIn 750ms ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

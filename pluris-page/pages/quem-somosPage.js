@@ -57,7 +57,7 @@ export default function QuemSomos() {
           </div>
         </div>
         <div className={Style.values}>
-          <SvgBlock svgClassNameColor={util.svgBlockWhite} />
+          <SvgBlock svgClassNameColor={util.svgBlockWhite} opposite />
           <Values />
         </div>
       </div>
