@@ -3,4 +3,84 @@
 
 .footer {
   background-color: $second-color;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  position: relative;
+
+  @include for-phone {
+    height: 30vh;
+  }
+
+  .navLinks {
+    @include for-phone {
+      display: none;
+    }
+
+    @include for-desktop-and-large {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      height: 200px;
+      justify-content: space-around;
+      font-size: 20px;
+      margin-left: 50px;
+      .link {
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  .contacts {
+    position: absolute;
+    bottom: 26px;
+    right: 2%;
+
+    .info {
+      color: white;
+      font-size: 24px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+
+      .icon {
+        font-size: 30px;
+        color: $primary-color;
+      }
+    }
+  }
+  .image {
+    @include for-phone {
+      position: absolute;
+      top: 8%;
+      right: 8%;
+      width: 100px;
+      height: 100px;
+    }
+    margin-right: 20px;
+  }
+}
+
+.midias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lighten($second-color, $amount: 10%);
+  height: 50px;
+
+  .mention {
+    margin-left: 50px;
+    color: $third-color;
+  }
+  .socialMidias {
+    margin-right: 50px;
+
+    .iconMidias {
+      font-size: 28px;
+      color: $primary-color;
+      margin-left: 10px;
+    }
+  }
 }
