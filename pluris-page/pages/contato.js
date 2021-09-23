@@ -8,7 +8,7 @@ import util from '../styles/util.module.scss'
 export default function Contato() {
   return (
     <Layout>
-      <SvgBlock svgClassNameColor={util.svgBlockGrey} />
+      <SvgBlock svgClassNameColor={util.svgBlockBlack} />
       <div className={Style.container}>
         <h2 className={util.titleBlue}>Entre em contato </h2>
         <div className={Style.content}>

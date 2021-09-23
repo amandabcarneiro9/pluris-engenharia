@@ -90,6 +90,10 @@
       }
     }
   }
+
+  .values {
+    background-color: darken($third-color, $amount: 30%);
+  }
 }
 
 @keyframes fadeIn {

@@ -2,6 +2,7 @@ import Style from './About.module.scss'
 import Util from '../styles/util.module.scss'
 import Link from 'next/link'
 import Values from './Values'
+import SvgBlock from './SvgBlock'
 
 export default function About() {
   return (
@@ -26,9 +27,7 @@ export default function About() {
         </div>
       </div>
       <div className={Util.blackSpace}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-          <path className="elementor-shape-fill" d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"></path>
-        </svg>
+        <SvgBlock svgClassNameColor={Util.svgBlockBlack} />
       </div>
     </>
   )

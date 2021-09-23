@@ -19,7 +19,7 @@ export default function Header() {
   }, [changeNavClass])
 
   function changeNavClass(event) {
-    headerElement.current.classList.toggle(styles.active, event.currentTarget.scrollY > 50)
+    headerElement.current && headerElement.current.classList.toggle(styles.active, event.currentTarget.scrollY > 50)
   }
 
   return (
@@ -42,7 +42,7 @@ export default function Header() {
           <a className={styles.link}>Galeria de Projetos</a>
         </Link>
         <Link href="/contato">
-          <button className={utilStyles.buttonBlue}>Entre em contato</button>
+          <a className={styles.link}>Entre em contato</a>
         </Link>
       </div>
     </header>
