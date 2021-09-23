@@ -10,7 +10,7 @@
   transition: all ease-out 0.5s;
 
   &.active {
-    background-color: opacify($second-color, 1);
+    background-color: transparentize($second-color, 0.2);
   }
 
   .link {

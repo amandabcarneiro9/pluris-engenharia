@@ -2,12 +2,14 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Style from './footer.module.scss'
+import SvgBlock from '../SvgBlock.jsx'
 import util from '../../styles/util.module.scss'
 
 const name = 'Pluris Engenharia logo'
 export default function Footer() {
   return (
-    <div>
+    <div className={Style.footer}>
+      <SvgBlock svgClassNameColor={util.svgBlockWhite} opposite />
       <div className={Style.image}>
         <Image priority src="/images/logo.png" className={util.logo} height={200} width={200} alt={name} />
       </div>
