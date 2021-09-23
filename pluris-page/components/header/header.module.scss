@@ -2,10 +2,16 @@
 @import '../styles/media-queries.scss';
 
 .header {
-  background-color: rgba(35, 35, 35, 0.7);
+  background-color: transparent;
   font-size: 20px;
   position: fixed;
   z-index: 3;
+  width: 100%;
+  transition: all ease-out 0.5s;
+
+  &.active {
+    background-color: opacify($second-color, 1);
+  }
 
   .link {
     color: $forth-color;

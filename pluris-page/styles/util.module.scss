@@ -68,6 +68,14 @@
   fill: white;
 }
 
+.svgBlockBlack {
+  fill: black;
+}
+
+.svgBlockGrey {
+  fill: darken($third-color, $amount: 30%);
+}
+
 .submitInput {
   display: inline-flex;
   justify-content: center;

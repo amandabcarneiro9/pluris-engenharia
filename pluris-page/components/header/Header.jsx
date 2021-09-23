@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import styles from './header.module.scss'
 import utilStyles from '../../styles/util.module.scss'
 import Hamburger from 'hamburger-react'
@@ -7,18 +7,27 @@ import Image from 'next/image'
 
 const name = 'logo'
 export default function Header() {
+  const headerElement = useRef('')
   const [isOpen, setOpen] = useState(false)
 
-  function linkClick() {
-    setOpen(false)
+  useEffect(() => {
+    window.addEventListener('scroll', changeNavClass)
+
+    return () => {
+      window.removeEventListener('scroll', changeNavClass)
+    }
+  }, [changeNavClass])
+
+  function changeNavClass(event) {
+    headerElement.current.classList.toggle(styles.active, event.currentTarget.scrollY > 50)
   }
 
   return (
-    <header className={`${styles.header} ${isOpen && styles.menuOpened}`}>
+    <header ref={headerElement} className={`${styles.header} ${isOpen && styles.menuOpened}`}>
       <Hamburger toggled={isOpen} toggle={setOpen} />
-      <div className={styles.image}>
+      <Link href="/" className={styles.image}>
         <Image priority src="/images/logo.png" className={utilStyles.logo} height={80} width={80} alt={name} />
-      </div>
+      </Link>
       <div className={styles.navLinks}>
         <Link href="/">
           <a className={styles.link}>Início</a>

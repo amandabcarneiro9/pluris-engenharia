@@ -5,7 +5,7 @@
   //   background-color: $forth-color;
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
+  // padding-top: 100px;
 
   .content {
     display: flex;
@@ -23,7 +23,7 @@
       font-style: normal;
 
       .firstMessage {
-        color: $third-color;
+        color: darken($third-color, $amount: 30%);
       }
 
       .secondMessage {

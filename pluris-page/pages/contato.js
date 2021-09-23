@@ -1,4 +1,5 @@
 import Layout from '../components/layout'
+import SvgBlock from '../components/SvgBlock'
 import ContactForm from '../components/contactForm'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Style from '../styles/contato.module.scss'
@@ -7,6 +8,7 @@ import util from '../styles/util.module.scss'
 export default function Contato() {
   return (
     <Layout>
+      <SvgBlock svgClassNameColor={util.svgBlockGrey} />
       <div className={Style.container}>
         <h2 className={util.titleBlue}>Entre em contato </h2>
         <div className={Style.content}>
@@ -23,7 +25,7 @@ export default function Contato() {
               </div>
               <div className={Style.contacts}>
                 <FontAwesomeIcon icon={['fas', 'envelope-square']} className={Style.icon} />
-                <span className={Style.info}>amandabcarneiro9@gmail.com</span>
+                <span className={Style.info}>comercial@plurisengenharia.com</span>
               </div>
 
               <div className={Style.contacts}>

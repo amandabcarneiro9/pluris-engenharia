@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import Image from 'next/image'
 import Values from '../components/Values'
-import { SvgBlock, SvgBlockOposite } from '../components/SvgBlock'
+import SvgBlock from '../components/SvgBlock'
 import Style from '../styles/quem-somos.module.scss'
 import util from '../styles/util.module.scss'
 
@@ -37,7 +37,7 @@ export default function QuemSomos() {
         </div>
 
         <div className={Style.block}>
-          <SvgBlock classNameColor={util.svgBlockBlack} />
+          <SvgBlock svgClassNameColor={util.svgBlockBlack} />
           <div className={Style.blockContent}>
             <div className={Style.content}>
               <span className={util.titleBlue}>Nossa Missão</span>
@@ -56,7 +56,7 @@ export default function QuemSomos() {
             </div>
           </div>
         </div>
-        <SvgBlock classNameColor={util.svgBlockWhite} opposite />
+        <SvgBlock svgClassNameColor={util.svgBlockWhite} opposite />
         <Values />
       </div>
     </Layout>

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from './header/Header'
+import Footer from './footer/Footer'
 import styles from './layout.module.scss'
 
 const name = 'home foto'
@@ -14,6 +15,7 @@ export default function Layout({ home, children }) {
       </Head>
       <Header />
       {children}
+      <Footer />
     </div>
   )
 }
