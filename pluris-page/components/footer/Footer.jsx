@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Style from './footer.module.scss'
-import SvgBlock from '../SvgBlock.jsx'
+import SvgBlock from '../svgBlock/SvgBlock.jsx'
 import util from '../../styles/util.module.scss'
 
 const name = 'Pluris Engenharia logo'

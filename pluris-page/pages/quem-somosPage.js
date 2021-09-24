@@ -1,9 +1,12 @@
 import Layout from '../components/layout'
 import Image from 'next/image'
-import Values from '../components/Values'
-import SvgBlock from '../components/SvgBlock'
+import Values from '../components/Values/Values'
+import SvgBlock from '../components/SvgBlock/SvgBlock'
 import Style from '../styles/quem-somos.module.scss'
 import util from '../styles/util.module.scss'
+import SlideShow from '../components/carousel/SlideShow'
+
+const phrases = ['slide', '1gjghgjh', '1111iuui', '1112233d']
 
 export default function QuemSomos() {
   return (
@@ -17,6 +20,7 @@ export default function QuemSomos() {
           width={1600}
           alt="capacetes de obras enfileirados"
         />
+        <SlideShow phrases={phrases} />
         <span className={Style.firstText}>Valores</span>
       </div>
 

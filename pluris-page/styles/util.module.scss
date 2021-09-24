@@ -51,6 +51,7 @@
   align-self: center;
   margin-top: 50px;
   font-weight: 600;
+  animation: fadeIn 750ms ease-out;
 }
 
 .titleBlack {
@@ -98,5 +99,27 @@
   &:hover {
     background-color: $third-color;
     color: $primary-color;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

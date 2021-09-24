@@ -1,5 +1,5 @@
 import Style from './contactForm.module.scss'
-import Util from '../styles/util.module.scss'
+import Util from '../../styles/util.module.scss'
 import { useState } from 'react'
 
 export default function ContactForm({ className, onSubmit }) {

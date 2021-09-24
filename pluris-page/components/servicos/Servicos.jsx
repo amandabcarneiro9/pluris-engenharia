@@ -1,5 +1,5 @@
 import Style from './servicos.module.scss'
-import utilStyles from '../styles/util.module.scss'
+import utilStyles from '../../styles/util.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 

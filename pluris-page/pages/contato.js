@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
-import SvgBlock from '../components/SvgBlock'
-import ContactForm from '../components/contactForm'
+import SvgBlock from '../components/svgBlock/SvgBlock'
+import ContactForm from '../components/contactForm/contactForm'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Style from '../styles/contato.module.scss'
 import util from '../styles/util.module.scss'

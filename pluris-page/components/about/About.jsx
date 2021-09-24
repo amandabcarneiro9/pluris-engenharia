@@ -1,8 +1,8 @@
 import Style from './About.module.scss'
-import Util from '../styles/util.module.scss'
+import Util from '../../styles/util.module.scss'
 import Link from 'next/link'
-import Values from './Values'
-import SvgBlock from './SvgBlock'
+import Values from '../values/Values'
+import SvgBlock from '../svgBlock/SvgBlock'
 
 export default function About() {
   return (

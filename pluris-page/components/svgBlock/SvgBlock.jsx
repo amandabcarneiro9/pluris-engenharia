@@ -1,5 +1,5 @@
 import Style from './svgBlock.module.scss'
-import util from '../styles/util.module.scss'
+import util from '../../styles/util.module.scss'
 
 export default function SvgBlock({ svgClassNameColor, opposite }) {
   const svgClassName = opposite ? Style.svgOpposite : ''

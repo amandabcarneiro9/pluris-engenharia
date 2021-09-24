@@ -42,7 +42,7 @@ export default function Header() {
           <a className={styles.link}>Galeria de Projetos</a>
         </Link>
         <Link href="/contato">
-          <a className={styles.link}>Entre em contato</a>
+          <a className={styles.link}>Contato</a>
         </Link>
       </div>
     </header>
