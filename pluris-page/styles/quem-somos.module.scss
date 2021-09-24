@@ -3,18 +3,6 @@
 
 .apresentation {
   position: relative;
-  animation: show 750ms ease-out;
-
-  .firstText {
-    position: absolute;
-    top: 40%;
-    left: 0;
-    color: white;
-    font-size: 22px;
-    text-align: center;
-    padding: 10px 100px;
-    animation: fadeIn 750ms ease-out;
-  }
 }
 
 .historia {

@@ -25,8 +25,10 @@ export default function Header() {
   return (
     <header ref={headerElement} className={`${styles.header} ${isOpen && styles.menuOpened}`}>
       <Hamburger toggled={isOpen} toggle={setOpen} />
-      <Link href="/" className={styles.image}>
-        <Image priority src="/images/logo.png" className={utilStyles.logo} height={80} width={80} alt={name} />
+      <Link href="/">
+        <a className={styles.image}>
+          <Image priority src="/images/logo.png" className={utilStyles.logo} height={80} width={80} alt={name} />
+        </a>
       </Link>
       <div className={styles.navLinks}>
         <Link href="/">

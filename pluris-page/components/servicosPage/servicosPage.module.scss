@@ -1,0 +1,11 @@
+.firstBlock {
+  position: relative;
+  .serviceName {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+}
