@@ -1,5 +1,10 @@
 .carousel {
   background-color: orange;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  background-color: transparent;
+  animation: show 1s ease-out;
 }
 
 .carouselItem {
@@ -8,4 +13,32 @@
 
 .carouselItemActive {
   display: block;
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100vh);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

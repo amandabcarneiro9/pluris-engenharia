@@ -6,7 +6,15 @@ import Style from '../styles/quem-somos.module.scss'
 import util from '../styles/util.module.scss'
 import SlideShow from '../components/carousel/SlideShow'
 
-const phrases = ['slide', '1gjghgjh', '1111iuui', '1112233d']
+const phrases = [
+  'Ética e Transparência ',
+  'Sustentabilidade',
+  'Desenvolvimento de pessoas',
+  'Integridade e profissionalismo',
+  'Iniciativa e criatividade',
+  'Comprometimento',
+  'O cliente tem razão',
+]
 
 export default function QuemSomos() {
   return (
@@ -21,7 +29,6 @@ export default function QuemSomos() {
           alt="capacetes de obras enfileirados"
         />
         <SlideShow phrases={phrases} />
-        <span className={Style.firstText}>Valores</span>
       </div>
 
       <div className={Style.historia}>
