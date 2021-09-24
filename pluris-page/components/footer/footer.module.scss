@@ -52,6 +52,8 @@
     }
   }
   .image {
+    margin-right: 20px;
+
     @include for-phone {
       position: absolute;
       top: 8%;
@@ -59,7 +61,12 @@
       width: 100px;
       height: 100px;
     }
-    margin-right: 20px;
+
+    @include for-desktop-and-large {
+      position: absolute;
+      right: 5%;
+      top: 15%;
+    }
   }
 }
 
