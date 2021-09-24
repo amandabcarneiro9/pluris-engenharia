@@ -1,3 +1,6 @@
+@import '../../styles/colors.scss';
+@import '../../styles/media-queries.scss';
+
 .firstBlock {
   position: relative;
   .serviceName {
@@ -7,5 +10,60 @@
     color: white;
     font-size: 40px;
     text-transform: uppercase;
+  }
+}
+
+.descriptionBlock {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: auto;
+  column-gap: 100px;
+  background-color: black;
+
+  .description {
+    display: flex;
+    font-size: 26px;
+    color: white;
+    margin-top: 50px;
+
+    .icon {
+      font-size: 40px;
+      color: $primary-color;
+      margin-right: 20px;
+    }
+  }
+}
+
+.whyChooseBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+
+  .textDescription {
+    font-size: 26px;
+    text-align: center;
+    padding: 0 188px;
+    margin-bottom: 100px;
+    color: white;
+  }
+}
+
+.contact {
+  background-color: $forth-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .text {
+    grid-area: text;
+    font-size: 26px;
+    padding: 20px 40px;
+    text-align: center;
+    margin-bottom: 50px;
   }
 }

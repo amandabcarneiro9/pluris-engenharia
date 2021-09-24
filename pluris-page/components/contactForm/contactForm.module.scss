@@ -11,6 +11,8 @@
     'textArea textArea'
     'button button';
   row-gap: 10px;
+  grid-area: form;
+  margin-bottom: 50px;
 
   .checkbox {
     display: grid;

@@ -49,9 +49,11 @@
   text-transform: uppercase;
   display: inline-block;
   align-self: center;
-  margin-top: 50px;
+  margin-top: 100px;
   font-weight: 600;
   animation: fadeIn 750ms ease-out;
+  grid-area: title;
+  text-align: center;
 }
 
 .titleBlack {
@@ -65,6 +67,18 @@
     color: $forth-color;
   }
 }
+
+.titleWhite {
+  color: white;
+  font-size: 38px;
+  text-transform: uppercase;
+  display: inline-block;
+  align-self: center;
+  margin-top: 100px;
+  font-weight: 600;
+  animation: fadeIn 750ms ease-out;
+}
+
 .svgBlockWhite {
   fill: white;
 }

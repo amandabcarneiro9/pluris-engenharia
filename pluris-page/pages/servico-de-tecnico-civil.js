@@ -3,8 +3,8 @@ import ServicePage from '../components/servicosPage/ServicesPage'
 export default function Administrativos() {
   return (
     <ServicePage
-      servicoName={'Serviços Administrativos'}
-      imageName={'calculadora-blue'}
+      servicoName={'Serviço de Técnico Civil'}
+      imageName={'supervisao-de-obra'}
       descriptionService1={
         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus praesentium ipsa ea ipsum perferendis?'
       }

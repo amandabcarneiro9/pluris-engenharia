@@ -18,21 +18,21 @@ export default function Servicos() {
         beatae"
           />
           <Service
-            href="/servicos-administrativos"
+            href="/servicos-de-engenharia"
             name="Serviços de engenharia "
             imageName="casa-em-obra"
             paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus, consectetur earum maxime ut
         beatae"
           />
           <Service
-            href="/servicos-administrativos"
+            href="/servico-de-tecnico-civil"
             name="Serviços de técnico civil"
             imageName="supervisao-de-obra"
             paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus, consectetur earum maxime ut
         beatae"
           />
           <Service
-            href="/servicos-administrativos"
+            href="/servicos-de-mao-de-obra"
             name="Serviços de mão de obra para construção civil"
             imageName="trabalhadores"
             paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus, consectetur earum maxime ut
