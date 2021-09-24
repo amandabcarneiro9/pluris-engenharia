@@ -13,6 +13,10 @@
     margin-top: 100px;
     width: 100%;
 
+    @include for-phone {
+      flex-direction: column;
+    }
+
     .informations {
       display: flex;
       flex-direction: column;
@@ -20,6 +24,10 @@
       font-size: 20px;
       font-weight: 600;
       font-style: normal;
+
+      @include for-phone {
+        width: 100%;
+      }
 
       .firstMessage {
         color: darken($third-color, $amount: 30%);
