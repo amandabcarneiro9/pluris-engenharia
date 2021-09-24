@@ -4,7 +4,7 @@ export default function Administrativos() {
   return (
     <ServicePage
       servicoName={'Serviços de Engenharia'}
-      imageName={'casa-em-obra'}
+      imageName={'casa-em-obra-blue'}
       descriptionService1={
         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus praesentium ipsa ea ipsum perferendis?'
       }
