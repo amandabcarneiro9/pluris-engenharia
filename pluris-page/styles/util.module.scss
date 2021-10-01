@@ -77,6 +77,10 @@
   margin-top: 100px;
   font-weight: 600;
   animation: fadeIn 750ms ease-out;
+
+  @include for-phone {
+    text-align: center;
+  }
 }
 
 .svgBlockWhite {
@@ -109,6 +113,7 @@
   font-style: normal;
   font-weight: bold;
   grid-area: button;
+  margin-bottom: 40px;
 
   &:hover {
     background-color: $third-color;
