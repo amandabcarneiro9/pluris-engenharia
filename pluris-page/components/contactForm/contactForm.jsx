@@ -2,7 +2,7 @@ import Style from './contactForm.module.scss'
 import Util from '../../styles/util.module.scss'
 import { useState } from 'react'
 
-export default function ContactForm({ className, onSubmit }) {
+export default function ContactForm({ onSubmit }) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
   const [email, setEmail] = useState('')
@@ -10,27 +10,30 @@ export default function ContactForm({ className, onSubmit }) {
   const [contactType, setContactType] = useState('Paisagismo')
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
+  const [sending, setSending] = useState(false)
 
   function onFormSubmit(event) {
     event.preventDefault()
     //ler os dados dos campos através do state
     //validate data
     //if right submit => onSubmit(values)
-    onSubmit({
-      name: name.trim(),
-      phone: phone.trim().replaceAll(' ', ''),
-      email: email.trim(),
-      address: address.trim(),
-      contactType,
-      subject: subject.trim(),
-      message: message.trim(),
-    })
+    // onSubmit({
+    //   name: name.trim(),
+    //   phone: phone.trim().replaceAll(' ', ''),
+    //   email: email.trim(),
+    //   address: address.trim(),
+    //   contactType,
+    //   subject: subject.trim(),
+    //   message: message.trim(),
+    // })
     //if not right show the errors
+    console.log(name, phone, email, address, contactType, subject, message)
   }
 
   function onContactTypeChange(event) {
     setContactType(event.target.value)
   }
+
   return (
     <form action="" onSubmit={onFormSubmit} className={Style.form}>
       <div className={Style.inputGrid1}>
@@ -119,7 +122,7 @@ export default function ContactForm({ className, onSubmit }) {
           onChange={(e) => setSubject(e.currentTarget.value)}
           placeholder="Escreva aqui título do email"
           required
-          className={Style.input}
+          className={Style.input6}
         />
       </div>
       <div className={Style.textAreaGrid}>
@@ -139,7 +142,7 @@ export default function ContactForm({ className, onSubmit }) {
           className={Style.textArea}
         ></textarea>
       </div>
-      <input type="submit" value="enviar" className={Util.submitInput} />
+      <input type="submit" value={sending ? 'Enviando...' : 'Enviar'} className={Util.submitInput} />
     </form>
   )
 }
