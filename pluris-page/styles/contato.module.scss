@@ -5,25 +5,47 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
 
   .content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 100px;
-    width: 100%;
+    display: grid;
+    grid-row: auto;
+    // margin-top: 100px;
+    // margin-left: 50px;
+
+    @include for-desktop-and-large {
+      grid-template-columns: 600px 600px;
+      grid-template-areas:
+        'information information'
+        ' contactIcons contactForm '
+        'contactIcons contactForm ';
+      // column-gap: 100px;
+      row-gap: 100px;
+    }
 
     @include for-phone {
-      flex-direction: column;
+      width: 80%;
+      grid-row: 200px;
+      grid-template-areas:
+        'information'
+        'contactForm'
+        'contactForm'
+        'contactIcons';
+      margin-top: 50px;
+      height: 100%;
+      justify-content: space-around;
+      row-gap: 30px;
     }
 
     .informations {
       display: flex;
       flex-direction: column;
-      width: 40%;
-      font-size: 20px;
+      font-size: 28px;
       font-weight: 600;
       font-style: normal;
+      grid-area: information;
+      text-align: center;
 
       @include for-phone {
         width: 100%;
@@ -32,11 +54,20 @@
       .firstMessage {
         color: darken($third-color, $amount: 30%);
       }
+    }
 
-      .secondMessage {
-        color: $primary-color;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .contactForm {
+      grid-area: contactForm;
+      background-color: $primary-color;
+      color: white;
+      text-transform: uppercase;
+
+      @include for-desktop-and-large {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 650px;
+        height: 700px;
       }
     }
 
@@ -45,14 +76,24 @@
       flex-direction: column;
       justify-content: space-around;
       height: 200px;
+      grid-area: contactIcons;
+      align-self: flex-start;
 
-      .icon {
-        color: $primary-color;
-        font-size: 40px;
-      }
-      .info {
-        color: $third-color;
-        margin-left: 20px;
+      .contacts {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        .icon {
+          color: $primary-color;
+          font-size: 40px;
+        }
+        .info {
+          font-size: 22px;
+          display: inline-block;
+          color: $third-color;
+          margin-left: 20px;
+          text-align: center;
+        }
       }
     }
   }

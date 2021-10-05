@@ -56,6 +56,19 @@
   text-align: center;
 }
 
+.titleBlueMinor {
+  color: $primary-color;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  align-self: center;
+  margin-top: 100px;
+  font-weight: 600;
+  animation: fadeIn 1s ease-out;
+  grid-area: title;
+  padding-right: 20px;
+}
+
 .titleBlack {
   color: $second-color;
   font-size: 38px;
@@ -102,13 +115,13 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: $primary-color;
+  background-color: white;
+  color: $primary-color;
   border-radius: 5px;
   border: white;
   text-transform: uppercase;
   width: 30%;
   height: 50px;
-  color: $forth-color;
   font-size: 18px;
   font-style: normal;
   font-weight: bold;
@@ -116,8 +129,8 @@
   margin-bottom: 40px;
 
   &:hover {
-    background-color: $third-color;
-    color: $primary-color;
+    background-color: $second-color;
+    color: white;
   }
 }
 

@@ -2,6 +2,8 @@
 @import '../styles/media-queries.scss';
 
 .form {
+  grid-area: contactForm;
+
   @include for-phone {
     display: flex;
     flex-direction: column;
@@ -21,6 +23,8 @@
     row-gap: 10px;
     grid-area: form;
     margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 68px;
   }
 
   .checkbox {
@@ -40,6 +44,7 @@
   .input {
     @include for-phone {
       width: 100%;
+      margin-bottom: 20px;
     }
 
     width: 80%;
