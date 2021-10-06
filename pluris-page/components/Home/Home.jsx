@@ -2,9 +2,14 @@ import Image from 'next/image'
 import styles from './home.module.scss'
 import utilStyles from '../../styles/util.module.scss'
 
-const name = 'mão masculina passando cimento no tijolo'
-
 export default function Home() {
+  const bla = (event) => {
+    event.preventDefault()
+    const element = document.querySelector('[data-section-name=bla]')
+
+    element && element.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <>
       <div className={styles.texts}>
@@ -14,7 +19,9 @@ export default function Home() {
           realizar os sonhos dos seus clientes.{' '}
         </p>
 
-        <button className={utilStyles.buttonWhite}> Conheça nossos serviços</button>
+        <a className={utilStyles.buttonWhite} href="#servicos" onClick={bla}>
+          Conheça nossos serviços
+        </a>
       </div>
     </>
   )

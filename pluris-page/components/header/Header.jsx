@@ -37,9 +37,20 @@ export default function Header() {
         <Link href="/quem-somosPage">
           <a className={styles.link}>Quem Somos</a>
         </Link>
-        <Link href="/">
-          <a className={styles.link}>Serviços</a>
-        </Link>
+        <Dropdown linkTo="/#servicos" label="Serviços">
+          <Link href="/servicos-administrativos">
+            <a className={styles.linkDropdown}>Serviços Administrativos</a>
+          </Link>
+          <Link href="/servicos-de-engenharia">
+            <a className={styles.linkDropdown}>Serviços de Engenharia</a>
+          </Link>
+          <Link href="/servico-de-tecnico-civil">
+            <a className={styles.linkDropdown}>Serviços de Técnico Civíl</a>
+          </Link>
+          <Link href="/servicos-de-mao-de-obra">
+            <a className={styles.linkDropdown}>Serviços de mão de obra</a>
+          </Link>
+        </Dropdown>
         <Link href="/">
           <a className={styles.link}>Galeria de Projetos</a>
         </Link>
@@ -48,5 +59,21 @@ export default function Header() {
         </Link>
       </div>
     </header>
+  )
+}
+
+function Dropdown({ linkTo, label, children }) {
+  const [opened, setOpened] = useState(false)
+  function toggleDropDown(event) {
+    event.preventDefault()
+    setOpened(!opened)
+  }
+  return (
+    <div className={`${styles.dropdown} ${opened ? styles.dropdownShowing : ''}`}>
+      <Link href={linkTo} onClick={toggleDropDown}>
+        {label}
+      </Link>
+      <div>{children}</div>
+    </div>
   )
 }
