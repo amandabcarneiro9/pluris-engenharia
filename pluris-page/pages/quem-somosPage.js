@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
 import Image from 'next/image'
-import Values from '../components/Values/Values'
+import Values from '../components/values/Values'
 import SvgBlock from '../components/SvgBlock/SvgBlock'
 import Style from '../styles/quem-somos.module.scss'
 import util from '../styles/util.module.scss'
