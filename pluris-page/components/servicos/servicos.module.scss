@@ -67,10 +67,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .serviceCardBack {
   transform: rotateY(180deg);
+  padding: 10px;
 }
 
 .serviceTitle {

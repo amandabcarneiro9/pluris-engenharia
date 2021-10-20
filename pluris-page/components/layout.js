@@ -9,7 +9,7 @@ export default function Layout({ home, children }) {
     <div className={styles.container}>
       <Head>
         <title>Pluris Engenharia</title>
-        <meta name="Pluris engenharia" content=" Pluris serviços de Engenharia" />
+        <meta name="Pluris engenharia" content=" Pluris Serviços de Engenharia" />
         <link rel="preload" href="/fonts/Noto_Sans/NotoSans-Regular.ttf" as="font" crossOrigin="" />
         <link rel="preload" href="/fonts/Noto_Sans/NotoSans-Bold.ttf" as="font" crossOrigin="" />
       </Head>

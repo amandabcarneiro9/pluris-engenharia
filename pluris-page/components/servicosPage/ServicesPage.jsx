@@ -8,14 +8,7 @@ import util from '../../styles/util.module.scss'
 
 const name = 'calculadora sobre a mesa'
 
-export default function ServicesPage({
-  servicoName,
-  imageName,
-  descriptionService1,
-  descriptionService2,
-  descriptionService3,
-  descriptionService4,
-}) {
+export default function ServicesPage({ servicoName, imageName, children }) {
   return (
     <Layout>
       <div className={style.firstBlock}>
@@ -23,7 +16,8 @@ export default function ServicesPage({
         <span className={style.serviceName}>{servicoName}</span>
       </div>
       <div className={style.descriptionBlock}>
-        <div className={style.description}>
+        {children}
+        {/* <div className={style.description}>
           <div className={style.icon}>
             <FontAwesomeIcon icon={['fas', 'chevron-right']} />
           </div>
@@ -46,15 +40,17 @@ export default function ServicesPage({
             <FontAwesomeIcon icon={['fas', 'chevron-right']} />
           </div>
           <span>{descriptionService4} </span>
-        </div>
+        </div> */}
       </div>
       <div className={style.whyChooseBlock}>
         <SvgBlock svgClassNameColor={util.svgBlockBlack} />
         <h2 className={util.titleWhite}>Porquê escolher a Pluris Engenharia?</h2>
         <p className={style.textDescription}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus praesentium ipsa ea ipsum perferendis?
-          Cupiditate officia voluptas deserunt placeat neque quam! Eligendi porro, assumenda atque voluptas dolorum
-          blanditiis temporibus sapiente?
+          A Pluris Engenharia é uma empresa que é sinônimo de qualidade no mercado. Com objetivo de oferecer um serviço
+          completo, a empresa dispõe de serviços de administração do projeto até a execução da obra e seu
+          acompanhamento. Além disso, empresa oferece o diferencial da planta 3D para que os clientes possam ver seus
+          sonhos tomando forma e sugerir os ajustes que desejar. Trabalhando de forma ampla, com responsabilidade e
+          segurança os clientes podem confiar seus sonhos à Pluris Engenharia.
         </p>
       </div>
 
@@ -66,5 +62,16 @@ export default function ServicesPage({
         <ContactForm />
       </div>
     </Layout>
+  )
+}
+
+export function ServiceDescription({ children }) {
+  return (
+    <div className={style.description}>
+      <div className={style.icon}>
+        <FontAwesomeIcon icon={['fas', 'chevron-right']} />
+      </div>
+      <span>{children} </span>
+    </div>
   )
 }

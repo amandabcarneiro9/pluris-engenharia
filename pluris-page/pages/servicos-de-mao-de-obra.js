@@ -1,22 +1,14 @@
-import ServicePage from '../components/servicosPage/ServicesPage'
+import ServicePage, { ServiceDescription } from '../components/servicosPage/ServicesPage'
 
 export default function Administrativos() {
   return (
-    <ServicePage
-      servicoName={'Serviço de mão de obra para Construção Civil'}
-      imageName={'trabalhadores-blue'}
-      descriptionService1={
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus praesentium ipsa ea ipsum perferendis?'
-      }
-      descriptionService2={
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus praesentium ipsa ea ipsum perferendis?'
-      }
-      descriptionService3={
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus praesentium ipsa ea ipsum perferendis?'
-      }
-      descriptionService4={
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus praesentium ipsa ea ipsum perferendis?'
-      }
-    />
+    <ServicePage servicoName={'Serviço de mão de obra para Construção Civil'} imageName={'trabalhadores-blue'}>
+      <ServiceDescription>Suporte para ligações de energia e água e esgoto</ServiceDescription>
+      <ServiceDescription>
+        Suporte em pequenas compras e valores de materiais, e orientação de lugares para cotações
+      </ServiceDescription>
+      <ServiceDescription>Busca por redução de custo mantendo a qualidade</ServiceDescription>
+      <ServiceDescription>Ações para possíveis imprevistos sem prejudicar a obra</ServiceDescription>
+    </ServicePage>
   )
 }

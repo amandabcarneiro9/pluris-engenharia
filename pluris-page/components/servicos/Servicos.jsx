@@ -14,29 +14,26 @@ export default function Servicos() {
             href="/servicos-administrativos"
             name="Serviços Administrativos"
             imageName="calculadora"
-            paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus, consectetur earum maxime ut
-        beatae"
+            paragraph="Documentação, Contato com fornecedores, Administração Financeira e mais."
           />
           <Service
             href="/servicos-de-engenharia"
             name="Serviços de engenharia "
             imageName="casa-em-obra"
-            paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus, consectetur earum maxime ut
-        beatae"
+            paragraph="Projeto estrutural, Projetos de terraplanagem,Laudos Técnicos e Ambiental, Georreferenciamento, Avaliação de Terrenos e Glebas Urbanas, Elaboração de Projeto Arquitetônico, Planta 3D
+ e mais. "
           />
           <Service
             href="/servico-de-tecnico-civil"
             name="Serviços de técnico civil"
             imageName="supervisao-de-obra"
-            paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus, consectetur earum maxime ut
-        beatae"
+            paragraph="Interpretação de plantas, gráficos e escalas, Orientação e acompanhamento da Equipe de obras, Instalação do canteiro de obras, Controle de estoque de matéria prima, Controle de resíduos e desperdícios, Controle da segurança dda obra e equipe e mais.  "
           />
           <Service
             href="/servicos-de-mao-de-obra"
             name="Serviços de mão de obra para construção civil"
             imageName="trabalhadores"
-            paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus, consectetur earum maxime ut
-        beatae"
+            paragraph="Equipe qualificada para construção do projeto, Mestre de obras, Pedreiros e mais. "
           />
         </div>
       </div>
