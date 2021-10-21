@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   background-color: black;
+  width: 100vw;
 
   .quemSomos {
     text-align: center;
@@ -17,7 +18,7 @@
       text-align: center;
       color: $third-color;
       padding: 20px 100px;
-      font-size: 20px;
+      font-size: 2rem;
       margin-top: 0;
     }
   }

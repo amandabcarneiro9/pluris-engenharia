@@ -4,7 +4,7 @@
 .footer {
   background-color: $second-color;
   display: flex;
-  width: 100%;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   padding: 50px 20px;
@@ -76,6 +76,7 @@
   align-items: center;
   background-color: lighten($second-color, $amount: 10%);
   height: 50px;
+  width: 100vw;
 
   .mention {
     margin-left: 50px;
