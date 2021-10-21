@@ -3,7 +3,7 @@
 
 .texts {
   background-image: url('../../public/images/home.jpg');
-  width: 100%;
+  width: 100vw;
   height: 800px;
   display: flex;
   flex-direction: column;
@@ -11,16 +11,6 @@
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  .tituloHome {
-    font-style: bold;
-    font-weight: 700;
-    font-display: swap;
-    color: $primary-color;
-    text-align: center;
-    font-size: 46px;
-    animation: show 1s ease-out;
-  }
 
   .paragrafoHome {
     margin-top: 0;
@@ -31,6 +21,10 @@
     font-style: normal;
     font-weight: 400;
     animation: fadeIn 750ms ease-out;
+
+    @include for-phone {
+      padding: 0;
+    }
   }
 }
 

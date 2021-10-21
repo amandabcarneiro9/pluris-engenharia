@@ -20,14 +20,6 @@ export default function QuemSomos() {
   return (
     <Layout>
       <div className={Style.apresentation}>
-        <Image
-          priority
-          src="/images/hats.jpg"
-          // className={Style.image}
-          height={600}
-          width={1600}
-          alt="capacetes de obras enfileirados"
-        />
         <SlideShow phrases={phrases} />
       </div>
 

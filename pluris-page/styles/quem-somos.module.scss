@@ -4,6 +4,17 @@
 .apresentation {
   position: relative;
   margin-bottom: -4px;
+  width: 100%;
+  height: 600px;
+  background-image: url('../public/images/hats.jpg');
+
+  @include for-phone {
+    height: 300px;
+  }
+
+  .image {
+    height: 100vh;
+  }
 }
 
 .historia {
@@ -36,7 +47,7 @@
 }
 
 .block {
-  width: 100%;
+  // width: 100%;
   background-color: white;
   margin-bottom: 50px;
   .blockContent {

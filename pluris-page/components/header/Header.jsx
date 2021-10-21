@@ -4,6 +4,7 @@ import styles from './header.module.scss'
 import utilStyles from '../../styles/util.module.scss'
 import Hamburger from 'hamburger-react'
 import Image from 'next/image'
+import Layout from '../layout'
 
 const name = 'logo'
 export default function Header() {

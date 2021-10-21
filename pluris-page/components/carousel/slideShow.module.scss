@@ -1,10 +1,15 @@
+@import '../../styles/media-queries.scss';
+
 .carousel {
-  background-color: orange;
   position: absolute;
   top: 50%;
   left: 20%;
   background-color: transparent;
-  animation: show 600ms ease-out;
+  animation: show 500ms ease-out;
+
+  @include for-phone {
+    text-align: center;
+  }
 }
 
 .carouselItem {
@@ -16,7 +21,11 @@
   color: white;
   font-size: 40px;
   text-transform: uppercase;
-  animation: fadeIn 1s ease-out;
+  animation: fadeIn 600ms ease-out;
+
+  @include for-phone {
+    font-size: 20px;
+  }
 }
 
 @keyframes fadeIn {
