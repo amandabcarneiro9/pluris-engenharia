@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
 }
 
 .services {
@@ -20,10 +19,9 @@
   }
 
   display: grid;
-  grid-template-columns: repeat(4, 250px);
-  grid-template-rows: 250px;
-  grid-gap: 50px;
-  justify-content: center;
+  grid-template-columns: repeat(4, 23vw);
+  grid-template-rows: 23vw;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   justify-items: center;
@@ -33,11 +31,14 @@
 
 .service {
   @include for-phone {
-    height: 200px;
+    width: 75vw;
+    height: 75vw;
   }
 
-  width: 250px;
-  height: 250px;
+  width: 23vw;
+  height: 23vw;
+  max-width: 250px;
+  max-height: 250px;
   perspective: 400px;
   cursor: pointer;
 }
