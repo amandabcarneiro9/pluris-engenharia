@@ -101,7 +101,7 @@ export default function ContactForm({ onSubmit }) {
         />
       </div>
       <div className={Style.inputGrid5}>
-        <span className={Style.options}>Selecione uma opção:*</span>
+        <span className={Style.optionsLabel}>Selecione uma opção:*</span>
         <div className={Style.checkbox}>
           <RadioBox name="contactType" value="Residencial" selected={contactType} onChange={onContactTypeChange} />
           <RadioBox name="contactType" value="Comercial" selected={contactType} onChange={onContactTypeChange} />
