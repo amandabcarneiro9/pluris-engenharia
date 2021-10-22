@@ -21,8 +21,10 @@ export default function Contato() {
           <div className={Style.contactIcons}>
             <span className={util.titleBlueMinor}>Você também pode nos encontrar por aqui </span>
             <div className={Style.contacts}>
-              <FontAwesomeIcon icon={['fab', 'whatsapp']} className={Style.icon} />
-              <span className={Style.info}>(xx)xxxx-xxxxx</span>
+              <a href="https://api.whatsapp.com/send?phone=5512997079171" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={['fab', 'whatsapp']} className={Style.icon} />
+              </a>
+              <span className={Style.info}>(12) 99707-9171</span>
             </div>
             <div className={Style.contacts}>
               <FontAwesomeIcon icon={['fas', 'envelope-square']} className={Style.icon} />
@@ -30,12 +32,14 @@ export default function Contato() {
             </div>
 
             <div className={Style.contacts}>
-              <FontAwesomeIcon icon={['fas', 'map-marker-alt']} className={Style.icon} />
-              <span className={Style.info}>Rua: exemplo exemplo exemplo,980 Bairro Cidade</span>
+              <a href="https://www.linkedin.com/company/pluris-engenharia" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={['fab', 'linkedin']} className={Style.icon} />
+              </a>
+              <span className={Style.info}>pluris-engenharia</span>
             </div>
 
             <div className={Style.contacts}>
-              <a href="https://www.instagram.com/pluris_engenharia/">
+              <a href="https://www.instagram.com/pluris_engenharia/" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={['fab', 'instagram-square']} className={Style.icon} />
               </a>
               <span className={Style.info}>@pluris_engenharia</span>

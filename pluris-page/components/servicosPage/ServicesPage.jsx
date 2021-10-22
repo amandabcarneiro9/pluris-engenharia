@@ -15,33 +15,7 @@ export default function ServicesPage({ servicoName, imageName, children }) {
         <Image priority src={`/images/${imageName}.jpg`} height={600} width={1600} alt={name} />
         <span className={style.serviceName}>{servicoName}</span>
       </div>
-      <div className={style.descriptionBlock}>
-        {children}
-        {/* <div className={style.description}>
-          <div className={style.icon}>
-            <FontAwesomeIcon icon={['fas', 'chevron-right']} />
-          </div>
-          <span>{descriptionService1} </span>
-        </div>
-        <div className={style.description}>
-          <div className={style.icon}>
-            <FontAwesomeIcon icon={['fas', 'chevron-right']} />
-          </div>
-          <span>{descriptionService2} </span>
-        </div>
-        <div className={style.description}>
-          <div className={style.icon}>
-            <FontAwesomeIcon icon={['fas', 'chevron-right']} />
-          </div>
-          <span>{descriptionService3} </span>
-        </div>
-        <div className={style.description}>
-          <div className={style.icon}>
-            <FontAwesomeIcon icon={['fas', 'chevron-right']} />
-          </div>
-          <span>{descriptionService4} </span>
-        </div> */}
-      </div>
+      <div className={style.descriptionBlock}>{children}</div>
       <div className={style.whyChooseBlock}>
         <SvgBlock svgClassNameColor={util.svgBlockBlack} />
         <h2 className={util.titleWhite}>Porquê escolher a Pluris Engenharia?</h2>

@@ -30,13 +30,15 @@ export default function Footer() {
 
         <div className={Style.contacts}>
           <div className={Style.info}>
-            <FontAwesomeIcon icon={['fab', 'whatsapp']} className={Style.icon} />
-            <span className={Style.info}>(xx)xxxx-xxxxx</span>
+            <a href="https://api.whatsapp.com/send?phone=5512997079171" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={['fab', 'whatsapp']} className={Style.icon} />
+            </a>
+            <span className={Style.info}>(12) 99707-9171</span>
           </div>
 
           <div className={Style.info}>
-            <FontAwesomeIcon icon={['fas', 'map-marker-alt']} className={Style.icon} />
-            <span className={Style.info}>Rua: exemplo exemplo exemplo,980 Bairro Cidade</span>
+            <FontAwesomeIcon icon={['fas', 'envelope-square']} className={Style.icon} />
+            <span className={Style.info}>comercial@plurisengenharia.com</span>
           </div>
         </div>
         <div className={Style.image}>
@@ -46,8 +48,12 @@ export default function Footer() {
       <div className={Style.midias}>
         <span className={Style.mention}>© Todos os direitos reservados.</span>
         <div className={Style.socialMidias}>
-          <FontAwesomeIcon icon={['fab', 'facebook']} className={Style.iconMidias} />
-          <FontAwesomeIcon icon={['fab', 'instagram']} className={Style.iconMidias} />
+          <a href="https://www.linkedin.com/company/pluris-engenharia" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={['fab', 'linkedin']} className={Style.iconMidias} />
+          </a>
+          <a href="https://www.instagram.com/pluris_engenharia/" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={['fab', 'instagram']} className={Style.iconMidias} />
+          </a>
         </div>
       </div>
     </>

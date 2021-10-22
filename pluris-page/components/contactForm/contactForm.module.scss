@@ -3,6 +3,9 @@
 
 .form {
   grid-area: contactForm;
+  text-transform: uppercase;
+  justify-content: center;
+  justify-items: center;
 
   @include for-phone {
     display: flex;
@@ -16,22 +19,27 @@
     grid-template-areas:
       'input1 input2 '
       'input3 input4'
-      'input5 input5'
+      'input5 none'
       'input6 input6'
       'textArea textArea'
       'button button';
-    row-gap: 10px;
+    row-gap: 15px;
     grid-area: form;
     margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 68px;
+    // margin-top: 50px;
+    // margin-left: 20px;
+    padding-top: 20px;
+    background-color: $primary-color;
+    color: white;
+    width: 650px;
+    height: 740px;
   }
 
   .checkbox {
     display: grid;
     grid-template-columns: min-content auto;
     grid-gap: 6px;
-    justify-content: start;
+    margin-top: 10px;
     margin-bottom: 10px;
     grid-area: input;
   }
@@ -48,7 +56,7 @@
     }
 
     width: 80%;
-    padding: 5px 10px;
+    padding: 12px 10px;
     border: 2px solid $primary-color;
   }
 
@@ -65,7 +73,7 @@
     flex-direction: column;
   }
 
-  .options {
+  .optionsLabel {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -88,6 +96,7 @@
   }
   .inputGrid5 {
     grid-area: input5;
+    padding-left: 10px;
   }
   .inputGrid6 {
     grid-area: input6;
@@ -95,7 +104,7 @@
     flex-direction: column;
 
     .input6 {
-      padding: 5px 10px;
+      padding: 12px 10px;
       border: 2px solid $primary-color;
     }
     @include for-desktop-and-large {
