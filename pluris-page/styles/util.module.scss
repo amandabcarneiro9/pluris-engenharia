@@ -132,6 +132,15 @@
     background-color: $second-color;
     color: white;
   }
+
+  @include for-phone {
+    background-color: $primary-color;
+    color: white;
+
+    &:hover {
+      background-color: black;
+    }
+  }
 }
 
 @keyframes fadeIn {
