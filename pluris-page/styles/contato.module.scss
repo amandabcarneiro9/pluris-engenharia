@@ -7,7 +7,7 @@
   margin-bottom: 100px;
   align-items: center;
   justify-content: center;
-  height: auto;
+  // height: auto;
 
   .content {
     display: grid;
@@ -80,6 +80,13 @@
           margin-left: 20px;
           text-align: center;
         }
+      }
+    }
+    .contactForm {
+      @include for-phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }

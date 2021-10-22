@@ -10,6 +10,8 @@
   @include for-phone {
     display: flex;
     flex-direction: column;
+    width: 80vw;
+    justify-content: center;
   }
 
   @include for-desktop-and-large {
