@@ -27,9 +27,11 @@
       color: white;
       height: 200px;
       justify-content: space-around;
-      font-size: 20px;
+      font-size: 24px;
       margin-left: 50px;
+      margin-bottom: 10px;
       .link {
+        width: 50%;
         &:hover {
           color: $primary-color;
         }
@@ -45,22 +47,28 @@
     @include for-desktop-and-large {
       justify-content: flex-end;
       align-items: flex-end;
+      margin-bottom: 10px;
     }
 
     .contactInfo {
-      width: 80%;
-      // display: flex;
+      width: 100%;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
 
       .info {
+        @include for-phone {
+          font-size: 2vh;
+        }
         color: white;
         font-size: 24px;
-        // margin-left: 10px;
-        // margin-bottom: 10px;
+        margin-left: 10px;
       }
 
       .icon {
         font-size: 30px;
         color: $primary-color;
+        margin-left: 10px;
       }
     }
   }
@@ -69,8 +77,8 @@
 
     @include for-phone {
       position: absolute;
-      top: 8%;
-      left: 5%;
+      top: 80%;
+      right: 5%;
       width: 100px;
     }
 
