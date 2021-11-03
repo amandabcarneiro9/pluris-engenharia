@@ -9,9 +9,10 @@
   position: relative;
 
   @include for-phone {
-    height: 200px;
-    grid-template-areas: 'logo' 'contactInfos';
-    grid-template-rows: 100px 100px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .navLinks {
@@ -76,9 +77,7 @@
     grid-area: logo;
 
     @include for-phone {
-      position: absolute;
-      top: 80%;
-      right: 5%;
+      margin-right: 20px;
       width: 100px;
     }
 
