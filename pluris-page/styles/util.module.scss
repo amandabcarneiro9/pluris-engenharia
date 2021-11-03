@@ -54,6 +54,10 @@
   animation: fadeIn 750ms ease-out;
   grid-area: title;
   text-align: center;
+
+  @include for-phone {
+    font-size: 8vw;
+  }
 }
 
 .titleBlueMinor {

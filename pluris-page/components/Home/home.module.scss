@@ -16,13 +16,18 @@
     font-size: 28px;
     color: $forth-color;
     text-align: center;
-    padding: 18px 118px;
     font-style: normal;
     font-weight: 400;
     animation: fadeIn 750ms ease-out;
 
+    @include for-desktop-and-large {
+      padding: 18px 118px;
+    }
+
     @include for-phone {
-      padding: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      font-size: 5vw;
     }
   }
 }

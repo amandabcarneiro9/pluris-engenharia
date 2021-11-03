@@ -29,14 +29,14 @@ export default function Footer() {
         </div>
 
         <div className={Style.contacts}>
-          <div className={Style.info}>
+          <div className={Style.contactInfo}>
             <a href="https://api.whatsapp.com/send?phone=5512997079171" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={['fab', 'whatsapp']} className={Style.icon} />
             </a>
             <span className={Style.info}>(12) 99707-9171</span>
           </div>
 
-          <div className={Style.info}>
+          <div className={Style.contactInfo}>
             <FontAwesomeIcon icon={['fas', 'envelope-square']} className={Style.icon} />
             <span className={Style.info}>comercial@plurisengenharia.com</span>
           </div>

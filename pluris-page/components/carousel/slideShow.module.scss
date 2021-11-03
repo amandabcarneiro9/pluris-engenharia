@@ -8,7 +8,7 @@
   animation: show 500ms ease-out;
 
   @include for-phone {
-    text-align: center;
+    font-size: 2vw;
   }
 }
 

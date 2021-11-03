@@ -23,7 +23,11 @@
       font-size: 8vw;
 
       @include for-desktop-and-large {
-        font-size: 2rem;
+        font-size: 2vw;
+      }
+
+      @include for-phone {
+        font-size: 5vw;
       }
     }
   }
