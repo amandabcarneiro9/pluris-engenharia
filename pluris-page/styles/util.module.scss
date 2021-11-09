@@ -66,11 +66,14 @@
   text-transform: uppercase;
   display: inline-block;
   align-self: center;
-  // margin-top: 100px;
   font-weight: 600;
   animation: fadeIn 1s ease-out;
   grid-area: title;
   // padding-right: 20px;
+
+  @include for-desktop-and-large {
+    margin-top: 100px;
+  }
 }
 
 .titleBlack {
